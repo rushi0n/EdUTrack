@@ -1,0 +1,95 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2e8b57, #48c9b0);
+    color: #333;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #eee;
+    margin-bottom: 2em;
+}
+
+.card-wrapper {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff22;
+    border-radius: 15px;
+    padding: 1.5em;
+    width: 250px;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.student-card {
+    background: rgba(70, 130, 180, 0.5);
+}
+
+.course-card {
+    background: rgba(255, 99, 71, 0.5);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 1.2em;
+}
+
+.btn {
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #1abc9c;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #16a085;
+    transform: scale(1.05);
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

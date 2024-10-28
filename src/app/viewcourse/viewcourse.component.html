@@ -1,0 +1,22 @@
+<div>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">CourseID</th>
+        <th scope="col">CourseName</th>
+        <th scope="col">CourseFees</th>
+        <th scope="col" colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cr of course">
+        <th scope="row">{{cr.cid}}</th>
+        <td>{{cr.cname}}</td>
+        <td>{{cr.fees}}</td>
+        <TD><input type="button" class="btn btn-success" value="Update" (click)="editcourse(cr.id)"></TD> 
+        <TD><input type="button" class="btn btn-danger" value="Delete" (click)="delcourse(cr.id)"></TD>
+      
+      </tr>
+    </tbody>
+  </table>
+</div>

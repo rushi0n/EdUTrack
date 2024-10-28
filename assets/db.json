@@ -1,0 +1,29 @@
+{
+  "student": [
+    {
+      "id": "101",
+      "name": "rushi",
+      "marks": "90.19"
+    }
+  ],
+  "course": [
+    {
+      "id": "f7a4",
+      "cid": 1,
+      "cname": "Java",
+      "fees": 30000
+    },
+    {
+      "id": "94a8",
+      "cid": "2",
+      "cname": "Python",
+      "fees": "10000"
+    },
+    {
+      "id": "8dbc",
+      "cid": "4",
+      "cname": "C",
+      "fees": "89089"
+    }
+  ]
+}
